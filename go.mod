@@ -1,3 +1,3 @@
-module backjoon
+module baekjoon
 
 go 1.13
