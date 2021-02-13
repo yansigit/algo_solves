@@ -1,6 +1,14 @@
-T = int(input())
+case_num = int(input())
+for i in range(case_num):
+    a, b = map(int, input().split())
+    num = b-a
+    k = 1
+    p = 1
+    while num > 0:
+        num -= k
+        k += 1
+        if num >= p:
+            num -= p
+            p += 1
 
-for _ in range(T):
-    start,end = map(int, input().split())
-    if end - start <= 3:
-        print(end-start)
+    print(k+p-2)
